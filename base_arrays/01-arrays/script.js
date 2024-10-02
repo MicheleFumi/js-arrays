@@ -10,9 +10,17 @@ const teachers = [
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
-const fourthTeacher = null;
+const fourthTeacher = teachers.indexOf("Phil");
+console.log(fourthTeacher);
+
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
+
+const fifth_teacher = teachers.indexOf("Carlo")
+if (fifth_teacher !== -1){
+    teachers.splice(fifth_teacher, 1, "Patrick"); 
+}
+console.log(teachers);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = null;
@@ -39,3 +47,4 @@ const teachersString = null;
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 const isTeachersEmpty = null;
+
